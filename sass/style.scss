@@ -106,7 +106,7 @@ $mainFont: "Cairo", sans-serif;
       font-family: $mainFont !important;
       color: #000;
       font-weight: bold;
-      line-height: 25px;
+      line-height: 28px;
     }
     p {
       color: #333;
@@ -522,6 +522,63 @@ $mainFont: "Cairo", sans-serif;
   }
 }
 
+// ==================================================================================================
+// Start video watch page
+
+
+
+.seo-header{
+  background-image: linear-gradient(to left, rgba(4, 79, 196, 0.8), rgba(6, 187, 187, 0.8)),url("../images/seo-header.jpg") !important;
+  height: 50vh !important;
+}
+
+.seo-workstep{
+  .section-header{
+    margin-bottom: 60px;
+    h4{
+      margin-bottom: 0 !important;
+      line-height: 38px !important;
+    }
+    p{
+      margin-top: 20px;
+      color: #000;
+    }
+  }
+  .card{
+    height: 560px !important;
+    .illustration{
+      margin-bottom: 20px !important;
+    }
+    h5, h6{
+      color: #000;
+      font-family: $mainFont !important;
+    }
+    h5{
+      font-weight: bold;
+      line-height: 25px;
+      font-size: 15px;
+    }
+    h6{
+      line-height: 25px;
+      font-size: 14px;
+    }
+    
+  }
+}
+.seo-why{
+  img{
+    width: 90% !important;
+  }
+  .why-content{
+    margin-top: 150px;
+  }
+}
+
+.seo-content{
+  margin-top: 130px !important;
+}
+
+
 
 
 
@@ -534,6 +591,9 @@ $mainFont: "Cairo", sans-serif;
   }
   .map{
     height: 45vh !important;
+  }
+  .seo-why .why-content{
+    margin-top: 80px;
   }
 }
 
@@ -554,6 +614,9 @@ $mainFont: "Cairo", sans-serif;
     form button{
       width: 20% !important;
     }
+  }
+  .seo-why .why-content{
+    margin-top: 50px;
   }
 }
 
@@ -613,6 +676,20 @@ $mainFont: "Cairo", sans-serif;
     text-align: right !important;
     margin-top: 30px;
   }
+  .video-header, .aos-header{
+    .header-content{
+      h4{
+        font-size: 25px;
+        line-height: 30px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+  .seo-why .why-content{
+    margin-top: 50px;
+  }
 }
 
 @media(max-width: 360px){
@@ -631,5 +708,11 @@ $mainFont: "Cairo", sans-serif;
   }
   .line{
     display: none;
+  }
+  .map form{
+    margin-top: 50px;
+  }
+  .map{
+    height: 115vh !important;
   }
 }

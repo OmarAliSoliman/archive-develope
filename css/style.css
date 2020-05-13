@@ -79,7 +79,7 @@
       font-family: "Cairo", sans-serif !important;
       color: #000;
       font-weight: bold;
-      line-height: 25px; }
+      line-height: 28px; }
     .why-us .why-content p {
       color: #333;
       line-height: 30px;
@@ -394,6 +394,41 @@
       .map form button:hover {
         background-image: linear-gradient(to left, #51CDC9, #42ABD2); }
 
+.seo-header {
+  background-image: linear-gradient(to left, rgba(4, 79, 196, 0.8), rgba(6, 187, 187, 0.8)), url("../images/seo-header.jpg") !important;
+  height: 50vh !important; }
+
+.seo-workstep .section-header {
+  margin-bottom: 60px; }
+  .seo-workstep .section-header h4 {
+    margin-bottom: 0 !important;
+    line-height: 38px !important; }
+  .seo-workstep .section-header p {
+    margin-top: 20px;
+    color: #000; }
+.seo-workstep .card {
+  height: 560px !important; }
+  .seo-workstep .card .illustration {
+    margin-bottom: 20px !important; }
+  .seo-workstep .card h5, .seo-workstep .card h6 {
+    color: #000;
+    font-family: "Cairo", sans-serif !important; }
+  .seo-workstep .card h5 {
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 15px; }
+  .seo-workstep .card h6 {
+    line-height: 25px;
+    font-size: 14px; }
+
+.seo-why img {
+  width: 90% !important; }
+.seo-why .why-content {
+  margin-top: 150px; }
+
+.seo-content {
+  margin-top: 130px !important; }
+
 @media (max-width: 1024px) {
   .f-line {
     display: none !important; }
@@ -402,7 +437,10 @@
     padding-top: 220px; }
 
   .map {
-    height: 45vh !important; } }
+    height: 45vh !important; }
+
+  .seo-why .why-content {
+    margin-top: 80px; } }
 @media (max-width: 800px) {
   .header {
     position: relative; }
@@ -417,7 +455,10 @@
   .map {
     height: 65vh !important; }
     .map form button {
-      width: 20% !important; } }
+      width: 20% !important; }
+
+  .seo-why .why-content {
+    margin-top: 50px; } }
 @media (max-width: 524px) {
   .header .header-content {
     padding-right: 14px;
@@ -465,7 +506,16 @@
 
   .type-call {
     text-align: right !important;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .video-header .header-content h4, .aos-header .header-content h4 {
+    font-size: 25px;
+    line-height: 30px; }
+  .video-header .header-content p, .aos-header .header-content p {
+    font-size: 13px; }
+
+  .seo-why .why-content {
+    margin-top: 50px; } }
 @media (max-width: 360px) {
   .header .header-content {
     padding-right: 14px;
@@ -479,6 +529,12 @@
     width: 60% !important; }
 
   .line {
-    display: none; } }
+    display: none; }
+
+  .map form {
+    margin-top: 50px; }
+
+  .map {
+    height: 115vh !important; } }
 
 /*# sourceMappingURL=style.css.map */
