@@ -11,8 +11,7 @@
   background-position: center;
   height: 65vh; }
   .header .header-content {
-    padding-top: 90px;
-    padding-right: 130px; }
+    padding-top: 90px; }
     .header .header-content h4,
     .header .header-content p {
       color: #fff;
@@ -50,7 +49,8 @@
     background-color: #fff;
     margin-top: 10px;
     padding: 20px;
-    height: 350px;
+    padding-bottom: 0 !important;
+    height: 320px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
     .services .card h4 {
       font-weight: bold;
@@ -78,7 +78,8 @@
     .why-us .why-content h4 {
       font-family: "Cairo", sans-serif !important;
       color: #000;
-      font-weight: bold; }
+      font-weight: bold;
+      line-height: 25px; }
     .why-us .why-content p {
       color: #333;
       line-height: 30px;
@@ -91,12 +92,12 @@
     color: #000;
     font-weight: bold;
     font-family: "Cairo", sans-serif;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     font-size: 30px; }
   .work-steps .card {
     position: relative;
     transition: all 0.5s ease-in-out;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 10px;
     padding-bottom: 20px;
     height: 300px;
@@ -131,7 +132,7 @@
       font-weight: bold;
       color: #000;
       position: absolute;
-      bottom: 10%; }
+      bottom: 2%; }
 
 .order-now {
   margin-top: 80px;
@@ -187,28 +188,30 @@
     font-family: "Cairo", sans-serif;
     font-weight: bold;
     font-size: 15px; }
-  .call-us .type-call a {
-    display: inline-block;
-    font-family: "Cairo", sans-serif;
-    text-align: center;
-    border: 1px solid #02a4ec;
-    background-color: #02a4ec;
-    margin: 20px;
-    margin-top: 60px;
-    color: #fff;
-    padding: 20px;
-    width: 22%; }
-    .call-us .type-call a:hover {
+  .call-us .type-call {
+    text-align: center; }
+    .call-us .type-call a {
+      display: inline-block;
+      font-family: "Cairo", sans-serif;
+      text-align: center;
       border: 1px solid #02a4ec;
-      background-color: transparent;
-      color: #000; }
-  .call-us .type-call a:last-child {
-    background-color: #ff9408;
-    border: 1px solid #ff9408; }
-    .call-us .type-call a:last-child:hover {
-      border: 1px solid #ff9408;
-      background-color: transparent;
-      color: #000; }
+      background-color: #02a4ec;
+      margin: 20px;
+      margin-top: 60px;
+      color: #fff;
+      padding: 20px;
+      width: 22%; }
+      .call-us .type-call a:hover {
+        border: 1px solid #02a4ec;
+        background-color: transparent;
+        color: #000; }
+    .call-us .type-call a:last-child {
+      background-color: #ff9408;
+      border: 1px solid #ff9408; }
+      .call-us .type-call a:last-child:hover {
+        border: 1px solid #ff9408;
+        background-color: transparent;
+        color: #000; }
 
 .send-email form {
   margin-top: 80px;
@@ -222,6 +225,7 @@
     .send-email form .section-header h4 {
       font-family: "Cairo", sans-serif !important;
       color: #000;
+      line-height: 27px;
       font-weight: bold; }
   .send-email form input {
     margin-top: 20px;
@@ -326,16 +330,94 @@
     .read .overlay i {
       font-size: 25px; }
 
+.aos-header {
+  background-image: linear-gradient(to left, #044FC4, #06BBBB) !important;
+  height: 50vh !important; }
+
+.aos-why img {
+  margin-top: 40px !important; }
+.aos-why h4 {
+  line-height: 30px;
+  font-size: 20px; }
+
+.map {
+  background-image: linear-gradient(rgba(102, 100, 100, 0.4), rgba(110, 107, 107, 0.4)), url("../images/map.png");
+  background-size: cover;
+  height: 100vh;
+  margin-top: 150px; }
+  .map form {
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    background-color: #fff !important;
+    box-shadow: 0 2.9px 14.3px -13px rgba(0, 0, 0, 0.14), 0 23px 114px -13px rgba(0, 0, 0, 0.28);
+    font-family: "Cairo", sans-serif !important; }
+    .map form .section-header {
+      padding-right: 50px; }
+      .map form .section-header h4 {
+        font-size: 30px; }
+      .map form .section-header p {
+        font-size: 16px; }
+    .map form .section-header {
+      margin-bottom: 20px; }
+      .map form .section-header h4 {
+        font-family: "Cairo", sans-serif !important;
+        color: #000;
+        font-weight: bold; }
+    .map form input {
+      margin-top: 20px;
+      border: 0;
+      border: 1px solid #d6d6d6;
+      border-radius: 10px;
+      padding: 15px;
+      width: 43.5%;
+      margin: 10px; }
+    .map form textarea {
+      border: 0;
+      border: 1px solid #d6d6d6;
+      border-radius: 10px;
+      padding: 10px;
+      height: 101px;
+      width: 90%;
+      margin-top: 30px; }
+    .map form button {
+      border: 0;
+      background-image: linear-gradient(to right, #51CDC9, #42ABD2);
+      color: #fff;
+      margin-top: 30px;
+      border-radius: 20px;
+      padding: 10px;
+      width: 10%;
+      transition: all 3s linear; }
+      .map form button:hover {
+        background-image: linear-gradient(to left, #51CDC9, #42ABD2); }
+
 @media (max-width: 1024px) {
   .f-line {
-    display: none !important; } }
+    display: none !important; }
+
+  .header .header-content {
+    padding-top: 220px; }
+
+  .map {
+    height: 45vh !important; } }
 @media (max-width: 800px) {
   .header {
     position: relative; }
     .header .header-content {
       padding-right: 130px;
       position: absolute;
-      top: 30%; } }
+      top: 30%; }
+
+  .header .header-content {
+    padding-top: 0; }
+
+  .map {
+    height: 65vh !important; }
+    .map form button {
+      width: 20% !important; } }
 @media (max-width: 524px) {
   .header .header-content {
     padding-right: 14px;
@@ -374,14 +456,29 @@
 
   .line {
     left: 200px !important;
-    top: -40px; } }
+    top: -40px; }
+
+  .map {
+    height: 100vh !important; }
+    .map form button {
+      width: 30% !important; }
+
+  .type-call {
+    text-align: right !important;
+    margin-top: 30px; } }
 @media (max-width: 360px) {
   .header .header-content {
     padding-right: 14px;
     position: absolute;
-    top: 0%; }
+    top: 10%; }
+
+  .send-email form button {
+    width: 30% !important; }
 
   .call-us .call {
-    width: 60% !important; } }
+    width: 60% !important; }
+
+  .line {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

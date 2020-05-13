@@ -20,7 +20,6 @@ $mainFont: "Cairo", sans-serif;
   height: 65vh;
   .header-content {
     padding-top: 90px;
-    padding-right: 130px;
     h4,
     p {
       color: #fff;
@@ -68,7 +67,8 @@ $mainFont: "Cairo", sans-serif;
     background-color: #fff;
     margin-top: 10px;
     padding: 20px;
-    height: 350px;
+    padding-bottom: 0 !important;
+    height: 320px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     h4 {
       font-weight: bold;
@@ -106,6 +106,7 @@ $mainFont: "Cairo", sans-serif;
       font-family: $mainFont !important;
       color: #000;
       font-weight: bold;
+      line-height: 25px;
     }
     p {
       color: #333;
@@ -124,14 +125,14 @@ $mainFont: "Cairo", sans-serif;
       color: #000;
       font-weight: bold;
       font-family: $mainFont;
-      margin-bottom: 80px;
+      margin-bottom: 60px;
       font-size: 30px;
     }
   }
   .card {
     position: relative;
     transition: all 0.5s ease-in-out;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 10px;
     padding-bottom: 20px;
     height: 300px;
@@ -170,7 +171,7 @@ $mainFont: "Cairo", sans-serif;
       font-weight: bold;
       color: #000;
       position: absolute;
-      bottom: 10%;
+      bottom: 2%;
     }
   }
 }
@@ -240,6 +241,7 @@ $mainFont: "Cairo", sans-serif;
     font-size: 15px;
   }
   .type-call {
+    text-align: center;
     a {
       display: inline-block;
       font-family: $mainFont;
@@ -284,6 +286,7 @@ $mainFont: "Cairo", sans-serif;
       h4 {
         font-family: $mainFont !important;
         color: #000;
+        line-height: 27px;  
         font-weight: bold;
       }
     }
@@ -432,9 +435,105 @@ $mainFont: "Cairo", sans-serif;
   }
 }
 
+// ==========================================================================================================================
+// start AOS page
+.aos-header{
+  background-image: linear-gradient(to left, #044FC4, #06BBBB) !important;
+  height: 50vh !important;
+}
+
+// start aos why
+.aos-why{
+  img{
+    margin-top: 40px !important;
+  }
+  h4{
+    line-height: 30px;
+    font-size: 20px;
+  }
+}
+
+// start map
+.map{
+  background-image: linear-gradient(rgba(102, 100, 100, 0.4),rgba(110, 107, 107, 0.4)),url("../images/map.png");
+  background-size: cover;
+  height: 100vh;
+  margin-top: 150px;
+  form {
+    .section-header{
+      padding-right: 50px;
+      h4{
+        font-size: 30px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    background-color: #fff !important;
+    box-shadow: 0 2.9px 14.3px -13px rgba(0, 0, 0, 0.14),
+      0 23px 114px -13px rgba(0, 0, 0, 0.28);
+    font-family: $mainFont !important;
+    .section-header {
+      margin-bottom: 20px;
+      h4 {
+        font-family: $mainFont !important;
+        color: #000;
+        font-weight: bold;
+      }
+    }
+    input {
+      margin-top: 20px;
+      border: 0;
+      border: 1px solid #d6d6d6;
+      border-radius: 10px;
+      padding: 15px;
+      width: 43.5%;
+      margin: 10px;
+    }
+    textarea{
+      border: 0;
+      border: 1px solid #d6d6d6;
+      border-radius: 10px;
+      padding: 10px;
+      height: 101px;
+      width: 90%;
+      margin-top: 30px;
+    }
+    button{
+      border: 0;
+      // background-color: #02a4ec;
+      // border: 1px solid #02a4ec;
+      background-image: linear-gradient(to right, #51CDC9, #42ABD2);
+      color: #fff;
+      margin-top: 30px;
+      border-radius: 20px;
+      padding: 10px;
+      width: 10%;
+      transition: all 3s linear;
+      &:hover{
+        background-image: linear-gradient(to left, #51CDC9, #42ABD2);
+      }
+    }
+  }
+}
+
+
+
+
 @media(max-width: 1024px){
   .f-line{
     display: none !important;
+  }
+  .header .header-content{
+    padding-top: 220px;
+  }
+  .map{
+    height: 45vh !important;
   }
 }
 
@@ -445,6 +544,15 @@ $mainFont: "Cairo", sans-serif;
       padding-right: 130px;
       position: absolute;
       top: 30%
+    }
+  }
+  .header .header-content{
+    padding-top: 0;
+  }
+  .map{
+    height: 65vh !important;
+    form button{
+      width: 20% !important;
     }
   }
 }
@@ -495,6 +603,16 @@ $mainFont: "Cairo", sans-serif;
     left: 200px !important;
     top: -40px;
   }
+  .map{
+    height: 100vh !important;
+    form button{
+      width: 30% !important;
+    }
+  }
+  .type-call {
+    text-align: right !important;
+    margin-top: 30px;
+  }
 }
 
 @media(max-width: 360px){
@@ -502,10 +620,16 @@ $mainFont: "Cairo", sans-serif;
     .header-content {
       padding-right: 14px;
       position: absolute;
-      top: 0%
+      top: 10%
     }
+  }
+  .send-email form button{
+    width: 30% !important;
   }
   .call-us .call {
     width: 60% !important;
+  }
+  .line{
+    display: none;
   }
 }
